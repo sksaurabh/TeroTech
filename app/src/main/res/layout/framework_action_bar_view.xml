@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Use fill_horizontal to get the whole actionbar
+And center_vertical gravity on all the child views -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/action_bar_left_title"
+            style="@style/i1_22R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/i1_20dp_margin"
+            android:gravity="center|left"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/action_bar_leftIcon"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:paddingLeft="@dimen/i1_15dp_margin"
+            android:paddingRight="@dimen/i1_10dp_margin" />
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            style="@style/i1_15R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/action_bar_rightText"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/i1_15dp_margin"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/action_bar_rightIcon"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/action_bar_rightIcon2"
+            android:clickable="true"
+            android:paddingLeft="@dimen/i1_10dp_margin"
+            android:paddingRight="@dimen/i1_10dp_margin" />
+
+        <ImageView
+            android:id="@+id/action_bar_rightIcon2"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true" />
+    </RelativeLayout>
+
+</FrameLayout>

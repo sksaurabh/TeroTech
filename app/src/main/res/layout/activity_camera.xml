@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+    <Button
+
+        android:id="@+id/button_capture"
+        android:background="@drawable/camera_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/i1_5dp_margin"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+    <Button
+        android:layout_below="@+id/button_capture"
+        android:id="@+id/cancel_capture"
+        android:background="@drawable/ic_cross_close"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/i1_5dp_margin"
+        android:layout_marginRight="@dimen/i1_5dp_margin"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/button_capture" />
+
+
+</RelativeLayout>

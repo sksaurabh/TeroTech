@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.telloquent.vms.activities.home.PrimaryVisitorDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/i1_5dp_margin"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:layout_marginTop="@dimen/i1_5dp_margin"
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:id="@+id/vrf_id"
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="VRF ID"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_visitorId"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="aaaaaa"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                    android:text="EMAIL ID"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_email"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="qqqqq"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/company_name"
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="COMPANY NAME"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_company_name"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="Telloquent"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/location_name"
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="LOCATION"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_location"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="ffgffgf"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="DEPARTMENT"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_department"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="BSCCC"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="MEETING ROOM"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_metting_room"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="Confrence"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/i1_5dp_margin"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/phone"
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="PHONE NUMBER"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_phone_number"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="9955554835"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="NAME"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_name"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="sssss"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/to_meet_linearlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/to_meet"
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="TO MEET"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_to_meet"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="-"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/time"
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="TIME"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_data_time"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="10:30PM"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="PURPOSE"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/view_purpose"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="intervie"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/additional_secondary_visitors"
+                                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/additional_Visitors"
+                                    style="@style/i1_text_view_primary_visitor"
+                                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="NUMBER OF ADDITIONAL VISITORS"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/number_of_visitors"
+                                    style="@style/i1_text_view_vrf"
+                                    android:layout_gravity="center|left"
+                                    android:gravity="center|left"
+                                    android:text="-"
+                                    android:textColor="@color/text_grey" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mScanId_not_available_linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="@dimen/i1_10dp_margin"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/view_visitior_details"
+                            style="@style/i1_register_button"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/i1_5dp_margin"
+                            android:layout_weight=".66"
+                            android:text="@string/view_visitor"
+                            android:textColor="@color/white" />
+
+
+                        <Button
+                            android:id="@+id/add_visitior_details"
+                            style="@style/i1_register_button"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/i1_5dp_margin"
+                            android:layout_weight=".66"
+                            android:backgroundTint="@color/green"
+                            android:text="@string/add_visitor"
+                            android:textColor="@color/white" />
+
+
+                        <Button
+                            android:id="@+id/submit_for_view_vrf_button"
+                            style="@style/i1_register_button"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/i1_5dp_margin"
+                            android:layout_weight=".66"
+                            android:backgroundTint="@color/green"
+                            android:text="@string/submit"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/visitor_image_layout"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/photo_frame"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:id="@+id/scan_id_for_view"
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/i1_5dp_padding"
+                        android:background="@color/light_grey"
+                        android:src="@drawable/blank_profile_male" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/scan_button_for_view_vrf"
+                    style="@style/i1_register_button"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/i1_20dp_margin"
+                    android:backgroundTint="@color/green"
+                    android:gravity="center"
+                    android:text="@string/scan_id"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.telloquent.vms.activities.home.CreateNewVrfActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/i1_5dp_margin"
+            android:layout_marginTop="@dimen/i1_10dp_margin"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black">
+
+
+                    <EditText
+                        android:id="@+id/visitor_name"
+                        style="@style/i1_edit_text"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/primary_visitor"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:padding="@dimen/i1_3dp_padding"
+                        android:textColor="@color/black" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/purpose_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/dividerColor" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/dividerColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+                        android:id="@+id/email_id"
+                        style="@style/i1_edit_text"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/email_id"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:padding="@dimen/i1_3dp_padding"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/i1_3dp_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Spinner
+
+                        android:layout_gravity="center"
+                        android:id="@+id/duration_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/dividerColor" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/dividerColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+
+                        android:id="@+id/create_vrf_mobile_number"
+                        style="@style/i1_edit_text"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/mobile_num"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:padding="@dimen/i1_3dp_padding"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/dividerColor" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/disable_personVisit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/visiting_for"
+                        style="@style/i1_4R"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/i1_5dp_margin"
+                        android:layout_marginRight="@dimen/i1_5dp_margin"
+                        android:text="@string/visiting_for"
+                        android:textColor="@color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/official_personel_radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/official_radio_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/office" />
+
+                        <RadioButton
+                            android:id="@+id/personal_radio_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/i1_30dp_padding"
+                            android:layout_marginRight="@dimen/i1_30dp_padding"
+                            android:layout_weight="1"
+                            android:text="@string/personal" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personal_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black">
+
+                        <EditText
+                            android:id="@+id/company_name"
+                            style="@style/i1_edit_text"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/company_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/i1_3dp_padding"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/dividerColor" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black">
+
+                        <EditText
+                            android:id="@+id/area"
+                            style="@style/i1_edit_text"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/address"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/i1_3dp_padding"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/dividerColor" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black">
+
+                        <EditText
+                            android:id="@+id/city"
+                            style="@style/i1_edit_text"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/city"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/i1_3dp_padding"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/dividerColor" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black">
+
+                        <EditText
+                            android:id="@+id/state"
+                            style="@style/i1_edit_text"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/state"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/i1_3dp_padding"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/dividerColor" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/i1_5dp_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black">
+
+                        <EditText
+                            android:id="@+id/country"
+                            style="@style/i1_edit_text"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/country"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/i1_3dp_padding"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/dividerColor" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black">
+
+                        <EditText
+                            android:id="@+id/pin_code"
+                            style="@style/i1_edit_text"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/pin_code"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/i1_3dp_padding"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/dividerColor" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/visiting_radio_button_relative_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/i1_20dp_margin"
+                android:layout_marginRight="@dimen/i1_20dp_margin"
+                android:layout_marginTop="@dimen/i1_10dp_margin"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/visiting_text"
+                    style="@style/i1_11R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/i1_20dp_margin"
+                    android:layout_weight="1"
+                    android:text="Whom To Meet:" />
+
+                <RadioGroup
+                    android:id="@+id/vrf_department_employee_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/visiting_text"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/employee_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/i1_20dp_margin"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/employee_text" />
+
+                    <RadioButton
+                        android:id="@+id/department_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginEnd="222dp"
+                        android:layout_weight="1"
+                        android:text="@string/department_text" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/employee_email_id_inputText_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black">
+
+                    <EditText
+                        android:id="@+id/employee_email_id"
+                        style="@style/i1_edit_text"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/emp_email_id"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:textColor="@color/black" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/employee_department_relative_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/department_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="@dimen/i1_1dp_margin"
+                    android:background="@color/dividerColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/i1_10dp_margin"
+                android:layout_marginLeft="@dimen/i1_30dp_margin"
+                android:layout_marginRight="@dimen/i1_30dp_margin"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/submit_vrf_button"
+                    style="@style/i1_register_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/i1_20dp_margin"
+                    android:layout_marginRight="@dimen/i1_20dp_margin"
+                    android:layout_toRightOf="@+id/reset_vrf_form"
+                    android:layout_weight="1"
+                    android:text="@string/submit"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/reset_vrf_form"
+                    style="@style/i1_register_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/i1_20dp_margin"
+                    android:layout_marginRight="@dimen/i1_20dp_margin"
+                    android:layout_toRightOf="@+id/reset_vrf_form"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/reset"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/scan_image_relative_layout"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/frame_icons"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/photo_frame"
+                        android:padding="@dimen/i1_5dp_margin" />
+
+                    <ImageView
+                        android:id="@+id/scan_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/i1_5dp_margin" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/scan_button_for_create_vrf"
+                    style="@style/i1_register_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/i1_20dp_margin"
+                    android:text="@string/scan_id"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_size"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/popup_title_textview"
+                style="@style/i1_text_view_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/i1_20dp_margin"
+                android:gravity="center"
+                android:text="@string/enter_mob_num" />
+
+            <ImageView
+                android:id="@+id/close_popup_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/i1_5dp_margin"
+                android:src="@drawable/ic_cross_close" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/enter_mob_number"
+            style="@style/custom_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/i1_10dp_margin"
+            android:layout_marginLeft="@dimen/i1_30dp_margin"
+            android:layout_marginRight="@dimen/i1_30dp_margin"
+            android:layout_marginTop="@dimen/i1_10dp_margin"
+            android:gravity="center"
+            android:hint="@string/mobile_num"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/submit_registration_walkin_vrf"
+            style="@style/i1_register_button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/i1_15dp_margin"
+            android:layout_marginLeft="@dimen/i1_20dp_margin"
+            android:layout_marginRight="@dimen/i1_20dp_margin"
+            android:layout_marginTop="@dimen/i1_10dp_margin"
+            android:layout_toRightOf="@+id/reset_vrf_form"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

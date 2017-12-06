@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/blue_color"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_size"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/i1_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/i1_15dp_margin"
+            android:gravity="center"
+            android:text="Thanks for your information"
+            android:textColor="@color/black"
+            android:textSize="@dimen/i1_fourteen" />
+
+        <TextView
+            style="@style/i1_7R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/i1_10dp_margin"
+            android:gravity="center"
+            android:text="Registration has been completed. Please contact the reception/security for next steps"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/i1_20dp_margin" />
+
+        <Button
+            android:id="@+id/okay_feedback"
+            style="@style/i1_register_button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/i1_20dp_margin"
+            android:layout_toRightOf="@+id/reset_vrf_form"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green"
+            android:text="@string/okay"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_active"
+    android:orientation="vertical"
+    tools:context="com.telloquent.vms.activities.home.LicenseKeyActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/i1_50dp_margin"
+            android:background="@drawable/shape_size"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/primaryTextBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/i1_15dp_margin"
+                android:gravity="center"
+                android:text="Enter Your LicenseKey" />
+
+            <EditText
+                android:id="@+id/edittext_licensekey"
+                style="@style/custom_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/i1_20dp_margin"
+                android:layout_marginRight="@dimen/i1_20dp_margin"
+                android:layout_marginTop="@dimen/i1_10dp_margin"
+                android:gravity="center"
+                android:hint="@string/licence_key"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:text="69b99ba5-47b1-46a2-be6b-9"
+                android:textColor="@color/black" />
+            <Button
+                android:id="@+id/licence_button"
+                style="@style/i1_register_button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/i1_20dp_margin"
+                android:layout_toRightOf="@+id/reset_vrf_form"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

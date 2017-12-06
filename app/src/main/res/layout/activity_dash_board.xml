@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_color"
+    android:orientation="vertical"
+    tools:context="com.telloquent.vms.activities.home.DashBoardActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_view" />
+
+    <LinearLayout
+        android:id="@+id/mMain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="3.6"
+            android:gravity="center">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/i1_20dp_margin"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/i1_text_view_vrf_second_header"
+                        android:layout_gravity="center"
+                        android:layout_span="3"
+                        android:gravity="center"
+                        android:text="@string/pre_registration"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_span="1"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_span="1"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf_second_header"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:text="@string/walk_in_visitor"
+                        android:textColor="@color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/qr_code_scanner"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_button_border"
+                            android:drawableTop="@drawable/barcode_icons"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/i1_30dp_padding" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/i1_text_view_vrf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/or"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/enter_mob_or_vrf_id"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_button_border"
+                            android:drawableTop="@drawable/mob_icons"
+                            android:gravity="center"
+                            android:paddingTop="30dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_span="1"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="1"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/register_walking_visitor"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_button_border"
+                            android:drawableTop="@drawable/atm_icons"
+                            android:gravity="center"
+                            android:paddingTop="40dp" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/i1_20dp_margin"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:text="@string/scan_qr"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:text="@string/enter_mob"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_span="1"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/i1_text_view_vrf"
+                        android:layout_gravity="center"
+                        android:layout_span="1"
+                        android:gravity="center"
+                        android:text="@string/register"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mMain_layout"
+            android:layout_weight=".4"
+            android:orientation="horizontal"
+            android:weightSum="1.3">
+
+            <TextView
+                android:id="@+id/powerd_by"
+                style="@style/i1_text_view_powered_by"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="@dimen/i1_5dp_margin"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="@string/powered_by_vms"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/vrf_settings_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/i1_5dp_padding"
+                android:layout_toRightOf="@+id/powerd_by"
+                android:layout_weight=".3"
+                android:background="@drawable/ic_settings" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
